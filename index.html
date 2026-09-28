@@ -163,6 +163,7 @@ footer{background:var(--navy-deep);color:#B9C4D0;padding:56px 0 calc(28px + env(
 <script>
 const CONFIG = {
   agentName: "S. STEPHEN",
+  agentPosition: "Deputy Director",
   companyName: "SSLF City & Housing",
   agentPhone: "+91 7373966590",
   agentWhatsApp: "917373966590", // digits only, country code first — replace with verified agent number
@@ -388,6 +389,7 @@ const CONFIG = {
     <div class="agent-box">
       <h3>Marketing / Sales Enquiries</h3>
       <p id="agentNameOut"></p>
+      <p id="agentPositionOut"></p>
       <p id="companyNameOut"></p>
       <p id="agentPhoneOut"></p>
       <p>WhatsApp: <a id="agentWaOut" href="#" target="_blank" rel="noopener"></a></p>
@@ -482,6 +484,7 @@ if(CONFIG.mapsEmbedUrl){
 
 // Agent / company / footer details
 document.getElementById('agentNameOut').textContent = CONFIG.agentName;
+document.getElementById('agentPositionOut').textContent = CONFIG.agentPosition;
 document.getElementById('companyNameOut').textContent = CONFIG.companyName;
 document.getElementById('agentPhoneOut').textContent = "Phone: " + CONFIG.agentPhone;
 document.getElementById('reraStatus').textContent = CONFIG.rera;
